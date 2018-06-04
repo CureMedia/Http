@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AB379778-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http.OAuth.Test", "test\Http.OAuth.Test\Http.OAuth.Test.csproj", "{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Extensions.Http.OAuth", "src\Microsoft.Extensions.Http.OAuth\Microsoft.Extensions.Http.OAuth.csproj", "{3E9AC15B-1CEA-438E-8D0C-ECF31FA3644D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9AC15B-1CEA-438E-8D0C-ECF31FA3644D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9AC15B-1CEA-438E-8D0C-ECF31FA3644D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9AC15B-1CEA-438E-8D0C-ECF31FA3644D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9AC15B-1CEA-438E-8D0C-ECF31FA3644D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

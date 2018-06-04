@@ -13,17 +13,23 @@ namespace Cure.Http.OAuth
 
         protected TimeSpan Timeout = TimeSpan.FromSeconds(5);
 
-        public TokenNegotiator(TokenNegotiatorOptions options) => _options = options;
+        public TokenNegotiator(
+            TokenNegotiatorOptions options,
+            IAccessMethod accessMethod,
+            ITokenValidator validator,
+            ITokenStore store)
+        {
+            AccessMethod = accessMethod;
+            TokenStore = store;
+            Validator = validator;
+            _options = options;
+        }
 
-        public IAccessMethodProvider AccessMethodProvider { get; set; }
+        public IAccessMethod AccessMethod { get; }
 
-        public BearerToken.MethodType MethodType { get; set; }
+        public ITokenStore TokenStore { get; }
 
-        public IAccessMethod AccessMethod => AccessMethodProvider.Create(MethodType.Name);
-
-        public ITokenStore TokenStore { get; set; }
-
-        public ITokenValidator Validator { get; set; }
+        public ITokenValidator Validator { get; }
 
         public ITokenClient Client { get; set; }
 
@@ -61,7 +67,7 @@ namespace Cure.Http.OAuth
         }
 
         public async Task<Token> RenewToken(
-            TokenValidationResult validationResult, 
+            TokenValidationResult validationResult,
             CancellationToken cancellationToken)
         {
             var token = validationResult.Token;

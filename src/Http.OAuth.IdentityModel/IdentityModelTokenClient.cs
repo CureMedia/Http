@@ -6,16 +6,17 @@ using IdentityModel.Client;
 
 namespace Cure.Http.OAuth.IdentityModel
 {
+    /// <inheritdoc />
     /// <summary>
-    /// Request a <see cref="Token"/> using <see cref="TokenClient"/>.
+    /// Request a <see cref="T:Cure.Http.OAuth.Token" /> using <see cref="P:Cure.Http.OAuth.IdentityModel.IdentityModelTokenClientAdapter.TokenClient" />.
     /// </summary>
-    public class IdentityModelTokenClient : ITokenClient
+    public class IdentityModelTokenClientAdapter : ITokenClient
     {
         /// <summary>
-        /// Create an instance of <see cref="IdentityModelTokenClient"/> using <paramref name="tokenClient"/>.
+        /// Create an instance of <see cref="IdentityModelTokenClientAdapter"/> using <paramref name="tokenClient"/>.
         /// </summary>
         /// <param name="tokenClient">The client to request a new token.</param>
-        public IdentityModelTokenClient(TokenClient tokenClient) =>
+        public IdentityModelTokenClientAdapter(TokenClient tokenClient) =>
             TokenClient = tokenClient;
 
         public TokenClient TokenClient { get; }
