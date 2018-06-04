@@ -1,0 +1,11 @@
+<Project>
+  <Import Project="build\dependencies.props" />
+
+  <PropertyGroup>
+    <Product>Cure.Http</Product>
+    <RepositoryUrl>https://github.com/CureMedia/Http</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>

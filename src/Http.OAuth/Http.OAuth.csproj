@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Cure.Http.OAuth</AssemblyName>
+    <RootNamespace>Cure.Http.OAuth</RootNamespace>
+  </PropertyGroup>
+
+</Project>

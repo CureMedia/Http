@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Cure.Http.OAuth.IdentityModel</AssemblyName>
+    <RootNamespace>Cure.Http.OAuth.IdentityModel</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="3.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Http.OAuth\Http.OAuth.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http", "src\Http\Http.csproj", "{2570F460-AFBE-44DC-AFD7-76A1847664EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http.OAuth", "src\Http.OAuth\Http.OAuth.csproj", "{9934CDAC-BB96-4BED-AFA3-E52AFB470D20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http.OAuth.IdentityModel", "src\Http.OAuth.IdentityModel\Http.OAuth.IdentityModel.csproj", "{39C09264-461B-46D8-9D2B-CAB60D500D61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B379B99-2BE2-4C92-9E44-B6EC96B02997}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AB379778-9922-482D-8295-C65C65913884}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http.OAuth.Test", "test\Http.OAuth.Test\Http.OAuth.Test.csproj", "{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2570F460-AFBE-44DC-AFD7-76A1847664EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2570F460-AFBE-44DC-AFD7-76A1847664EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2570F460-AFBE-44DC-AFD7-76A1847664EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2570F460-AFBE-44DC-AFD7-76A1847664EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9934CDAC-BB96-4BED-AFA3-E52AFB470D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9934CDAC-BB96-4BED-AFA3-E52AFB470D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9934CDAC-BB96-4BED-AFA3-E52AFB470D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9934CDAC-BB96-4BED-AFA3-E52AFB470D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C09264-461B-46D8-9D2B-CAB60D500D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C09264-461B-46D8-9D2B-CAB60D500D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C09264-461B-46D8-9D2B-CAB60D500D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C09264-461B-46D8-9D2B-CAB60D500D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61FCE3F2-9CF9-43D3-A5F2-924B0DA91E0F} = {AB379778-9922-482D-8295-C65C65913884}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC021727-80C9-4CAB-BA9A-D221BD15A045}
+	EndGlobalSection
+EndGlobal
