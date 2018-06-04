@@ -1,5 +1,12 @@
 # Http
 
+# Build
+
+| Branch | Status | Packages |
+|--------|--------|-------|
+| master | [![Build status](https://ci.appveyor.com/api/projects/status/0q8713ajosu68d2s/branch/master?svg=true)](https://ci.appveyor.com/project/curemedia/http/branch/master) |  |
+| develop | [![Build status](https://ci.appveyor.com/api/projects/status/0q8713ajosu68d2s?svg=true)](https://ci.appveyor.com/project/curemedia/http) | [MyGet](https://www.myget.org/feed/Packages/curemedia-ci) |
+
 # OAuth2
 Communicating with a API protected by OAuth2 requires setting the proper access method to send the access token, handle expiration of tokens as well renewal - either by requesting a new or use a refresh token.
 
